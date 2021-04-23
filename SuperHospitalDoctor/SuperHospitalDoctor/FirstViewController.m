@@ -8,6 +8,8 @@
 #import "FirstViewController.h"
 #import "RTRootNavigationController.h"
 #import "SecondViewController.h"
+#import "UserTool.h"
+
 @interface FirstViewController ()
 
 @end
@@ -18,15 +20,20 @@
     [super viewDidLoad];
 
     UIButton *but = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    but.frame = CGRectMake(20, 100, 100, 44);
+    but.frame = CGRectMake(20, 100, 200, 44);
     but.backgroundColor = [UIColor greenColor];
     [but setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
     [but setTitle:@"点击1234567898765" forState:(UIControlStateNormal)];
     [but addTarget:self action:@selector(didClickedButton) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:but];
+    
+    
 }
 
 - (void)didClickedButton {
+    
+    NSLog(@"%@---%@---%@",[UserTool getUserInfo].userName,[UserTool getUserInfo].nickName,[UserTool getUserInfo].userId);
+    
     [self.navigationController pushViewController:[SecondViewController new] animated:YES];
 }
 

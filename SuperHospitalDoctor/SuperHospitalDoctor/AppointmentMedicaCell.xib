@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="KGk-i7-Jjw" customClass="AppointmentMedicaCell">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Num-wt-mbj">
+                        <rect key="frame" x="15" y="15" width="430" height="160"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百姓大药房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glB-I0-4Te">
+                                <rect key="frame" x="10" y="15" width="388" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Iv3-K4-VOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_phone" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-dY-ZFd">
+                                <rect key="frame" x="408" y="15" width="12" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Avc-4P-SkL"/>
+                                    <constraint firstAttribute="width" constant="12" id="bBD-bu-3Q2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpU-rk-q2W">
+                                <rect key="frame" x="10" y="45" width="410" height="1"/>
+                                <color key="backgroundColor" red="0.96030298223350252" green="0.96030298223350252" blue="0.96030298223350252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8Bt-ae-Dkz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFd-kz-4rX">
+                                <rect key="frame" x="10" y="56" width="45" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="9Hz-dt-8Ab"/>
+                                    <constraint firstAttribute="width" constant="45" id="geR-tg-e2A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0W-PY-Xp6">
+                                <rect key="frame" x="10" y="88" width="45" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="贵阳市开阳县城关镇心学大道2号" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK2-7c-2hi">
+                                <rect key="frame" x="55" y="88" width="365" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-28173538" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5J-h7-Gjo">
+                                <rect key="frame" x="55" y="56" width="365" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="IOF-2D-afq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W5J-h7-Gjo" firstAttribute="top" secondItem="EpU-rk-q2W" secondAttribute="bottom" constant="10" id="0Mn-Dd-BN7"/>
+                            <constraint firstItem="wK2-7c-2hi" firstAttribute="height" secondItem="W5J-h7-Gjo" secondAttribute="height" id="1P1-dp-mTr"/>
+                            <constraint firstItem="wK2-7c-2hi" firstAttribute="leading" secondItem="W5J-h7-Gjo" secondAttribute="leading" id="4nN-Ts-rkH"/>
+                            <constraint firstAttribute="trailing" secondItem="EpU-rk-q2W" secondAttribute="trailing" constant="10" id="APd-fn-5Qe"/>
+                            <constraint firstItem="glB-I0-4Te" firstAttribute="top" secondItem="Num-wt-mbj" secondAttribute="top" constant="15" id="AxZ-kL-ylM"/>
+                            <constraint firstItem="QFd-kz-4rX" firstAttribute="leading" secondItem="Num-wt-mbj" secondAttribute="leading" constant="10" id="DT2-Kn-xCg"/>
+                            <constraint firstItem="V0W-PY-Xp6" firstAttribute="height" secondItem="QFd-kz-4rX" secondAttribute="height" id="G0L-bT-zTk"/>
+                            <constraint firstItem="wK2-7c-2hi" firstAttribute="top" secondItem="W5J-h7-Gjo" secondAttribute="bottom" id="Hpn-Qo-j7W"/>
+                            <constraint firstItem="EpU-rk-q2W" firstAttribute="top" secondItem="glB-I0-4Te" secondAttribute="bottom" constant="10" id="Iry-mr-ImJ"/>
+                            <constraint firstItem="glB-I0-4Te" firstAttribute="leading" secondItem="Num-wt-mbj" secondAttribute="leading" constant="10" id="OUU-A9-PCt"/>
+                            <constraint firstItem="wK2-7c-2hi" firstAttribute="width" secondItem="W5J-h7-Gjo" secondAttribute="width" id="QdT-wd-Atq"/>
+                            <constraint firstItem="V0W-PY-Xp6" firstAttribute="top" secondItem="QFd-kz-4rX" secondAttribute="bottom" id="Saz-jH-OSg"/>
+                            <constraint firstItem="j0n-dY-ZFd" firstAttribute="top" secondItem="Num-wt-mbj" secondAttribute="top" constant="15" id="U9N-lE-iJC"/>
+                            <constraint firstAttribute="trailing" secondItem="j0n-dY-ZFd" secondAttribute="trailing" constant="10" id="XVC-LW-EUR"/>
+                            <constraint firstItem="EpU-rk-q2W" firstAttribute="leading" secondItem="Num-wt-mbj" secondAttribute="leading" constant="10" id="ZwM-WY-Ja8"/>
+                            <constraint firstAttribute="trailing" secondItem="W5J-h7-Gjo" secondAttribute="trailing" constant="10" id="a7F-1l-Jwx"/>
+                            <constraint firstItem="j0n-dY-ZFd" firstAttribute="leading" secondItem="glB-I0-4Te" secondAttribute="trailing" constant="10" id="hFO-hH-ooU"/>
+                            <constraint firstItem="QFd-kz-4rX" firstAttribute="top" secondItem="EpU-rk-q2W" secondAttribute="bottom" constant="10" id="spj-aw-j2l"/>
+                            <constraint firstItem="W5J-h7-Gjo" firstAttribute="leading" secondItem="QFd-kz-4rX" secondAttribute="trailing" id="tNT-nx-Ts1"/>
+                            <constraint firstItem="V0W-PY-Xp6" firstAttribute="leading" secondItem="Num-wt-mbj" secondAttribute="leading" constant="10" id="th0-PE-CYo"/>
+                            <constraint firstItem="V0W-PY-Xp6" firstAttribute="width" secondItem="QFd-kz-4rX" secondAttribute="width" id="tk3-Zm-wtk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Num-wt-mbj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="AqF-93-4uE"/>
+                    <constraint firstItem="Num-wt-mbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Cf3-jm-c6W"/>
+                    <constraint firstAttribute="bottom" secondItem="Num-wt-mbj" secondAttribute="bottom" id="ViZ-0B-SSv"/>
+                    <constraint firstAttribute="trailing" secondItem="Num-wt-mbj" secondAttribute="trailing" constant="15" id="l7g-Us-h9t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="adressLabel" destination="wK2-7c-2hi" id="oyD-eS-7pm"/>
+                <outlet property="adressTitleLabel" destination="V0W-PY-Xp6" id="UOq-aC-Zgp"/>
+                <outlet property="hospitalNameLabel" destination="glB-I0-4Te" id="bim-tQ-r8G"/>
+                <outlet property="phoneImageView" destination="j0n-dY-ZFd" id="Re6-Y4-kNT"/>
+                <outlet property="phoneLabel" destination="W5J-h7-Gjo" id="N77-kd-EH6"/>
+                <outlet property="phoneTitleLabel" destination="QFd-kz-4rX" id="MBU-yu-cYy"/>
+                <outlet property="sbgView" destination="Num-wt-mbj" id="l3j-VW-2f9"/>
+            </connections>
+            <point key="canvasLocation" x="14.492753623188406" y="75.334821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_phone" width="11.5" height="17.5"/>
+    </resources>
+</document>

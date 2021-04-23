@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UserModel : NSObject
 
+@property (nonatomic, copy) NSString *userName;
+
+@property (nonatomic, copy) NSString *userId;
+
+@property (nonatomic, copy) NSString *nickName;
+
 
 
 

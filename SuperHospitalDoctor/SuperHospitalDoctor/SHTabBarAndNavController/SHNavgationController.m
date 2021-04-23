@@ -19,7 +19,7 @@
 //    UIImage *bg = [UIImage createImageWithColor:[UIColor colorWithRed:255.0/255.0 green:211.0/255.0 blue:0.0/255.0 alpha:1]];
     
     UINavigationBar *bar = [UINavigationBar appearance];
-    
+    bar.barTintColor = [UIColor redColor];
 //    [bar setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
 //    [bar setShadowImage:[[UIImage alloc] init]];
     [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:17]}];

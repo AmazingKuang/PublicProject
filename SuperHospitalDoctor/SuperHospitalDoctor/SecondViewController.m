@@ -6,6 +6,8 @@
 //
 
 #import "SecondViewController.h"
+#import "RTRootNavigationController.h"
+#import "UIViewController+RTRootNavigationController.h"
 
 @interface SecondViewController ()
 
@@ -17,8 +19,24 @@
     [super viewDidLoad];
     self.navigationItem.title = @"第二页";
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor redColor]};
+//    self.rt_navigationController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"好" style:(UIBarButtonItemStylePlain) target:self action:@selector(did)];
+//    self.rt_navigationController.useSystemBackBarButtonItem = NO;
+    
+}
+- (UIBarButtonItem *)rt_customBackItemWithTarget:(id)target action:(SEL)action {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setTitle:@"       \n       " forState:UIControlStateNormal];
+//    [btn setImage:[UIImage imageNamed:@"navigation_back"] forState:UIControlStateNormal];
+    [btn setTitle:@"哈哈" forState:(UIControlStateNormal)];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn sizeToFit];
+    [btn addTarget:self action:@selector(did) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    return item;
+}
 
-
+- (void)did {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
