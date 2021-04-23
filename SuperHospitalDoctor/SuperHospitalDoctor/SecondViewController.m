@@ -21,7 +21,13 @@
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor redColor]};
 //    self.rt_navigationController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"好" style:(UIBarButtonItemStylePlain) target:self action:@selector(did)];
 //    self.rt_navigationController.useSystemBackBarButtonItem = NO;
-    
+    UIButton *but = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    but.frame = CGRectMake(20, 100, 100, 44);
+    but.backgroundColor = [UIColor greenColor];
+    [but setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+    [but setTitle:@"点击" forState:(UIControlStateNormal)];
+    [but addTarget:self action:@selector(didClickedButton) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:but];
 }
 - (UIBarButtonItem *)rt_customBackItemWithTarget:(id)target action:(SEL)action {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
